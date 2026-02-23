@@ -59,11 +59,6 @@ flutter run
 **Gyroscope**: Rotate the device
 **GPS**: Go outdoors for best results
 
-## Next Steps
-
-Full implementation spec available in:
-- `.kiro/specs/vehicle-telemetry-unsafe-driving-detection/`
-
 ## Requirements
 
 - Flutter SDK 3.5.4+
