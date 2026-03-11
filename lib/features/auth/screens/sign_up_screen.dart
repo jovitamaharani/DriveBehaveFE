@@ -1,5 +1,6 @@
 import 'package:drivingbehavior/core/constants/app_colors.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class SignUpScreen extends StatefulWidget {
   const SignUpScreen({super.key});
@@ -65,21 +66,21 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   children: [
                     const SizedBox(height: 40),
                     // Judul diubah jadi Sign Up
-                    const Center(
+                    Center(
                       child: Text(
                         'Sign Up',
-                        style: TextStyle(
+                        style: GoogleFonts.poppins(
                           color: AppColors.primary,
                           fontSize: 35,
                           fontWeight: FontWeight.w900,
                         ),
                       ),
                     ),
-                    const SizedBox(height: 8),
-                    const Center(
+                    const SizedBox(height: 4),
+                    Center(
                       child: Text(
                         'Let\'s start your journey with us',
-                        style: TextStyle(
+                        style: GoogleFonts.poppins(
                           color: AppColors.secondary,
                           fontSize: 14,
                           fontWeight: FontWeight.w600,
@@ -144,9 +145,9 @@ class _SignUpScreenState extends State<SignUpScreen> {
                           disabledBackgroundColor: const Color(0xFF6B6B6B),
                           disabledForegroundColor: Colors.white,
                         ),
-                        child: const Text(
+                        child: Text(
                           'Create Account',
-                          style: TextStyle(
+                          style: GoogleFonts.poppins(
                             fontSize: 15,
                             fontWeight: FontWeight.bold,
                           ),
@@ -159,9 +160,9 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        const Text(
+                        Text(
                           'Already have an account? ',
-                          style: TextStyle(
+                          style: GoogleFonts.poppins(
                             color: AppColors.secondary,
                             fontWeight: FontWeight.w600,
                             fontSize: 13,
@@ -171,9 +172,9 @@ class _SignUpScreenState extends State<SignUpScreen> {
                           onTap: () {
                             Navigator.pop(context); // Kembali ke Sign In
                           },
-                          child: const Text(
+                          child: Text(
                             'Sign in here',
-                            style: TextStyle(
+                            style: GoogleFonts.poppins(
                               color: AppColors.primary,
                               fontWeight: FontWeight.bold,
                               fontSize: 13,

@@ -1,6 +1,7 @@
 import 'package:drivingbehavior/core/constants/app_colors.dart';
 import 'package:drivingbehavior/features/auth/screens/sign_in_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});
@@ -15,10 +16,10 @@ class SplashScreen extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const Spacer(flex: 5),
+              const Spacer(flex: 6),
               Container(
-                width: 170,
-                height: 170,
+                width: 180,
+                height: 180,
                 decoration: const BoxDecoration(
                   color: AppColors.secondary,
                   shape: BoxShape.circle,
@@ -34,24 +35,32 @@ class SplashScreen extends StatelessWidget {
                   ),
                 ),
               ),
-              const Spacer(flex: 3),
-              const Text(
+              const Spacer(flex: 4),
+              Text(
                 'Ready to Go?',
-                style: TextStyle(
+                style: GoogleFonts.poppins(
                   color: AppColors.primary,
-                  fontSize: 26,
-                  fontWeight: FontWeight.w900,
+                  fontSize: 30,
+                  fontWeight: FontWeight.w800,
                 ),
               ),
+              // const Text(
+              //   'Ready to Go?',
+              //   style: TextStyle(
+              //     color: AppColors.primary,
+              //     fontSize: 26,
+              //     fontWeight: FontWeight.w900,
+              //   ),
+              // ),
               const SizedBox(height: 3),
-              const Text(
+              Text(
                 'Track your trips and\ndriving insights safely with us.',
                 textAlign: TextAlign.center,
-                style: TextStyle(
+                style: GoogleFonts.poppins(
                     color: AppColors.secondary,
-                    fontSize: 15,
+                    fontSize: 16,
                     height: 1.3,
-                    fontWeight: FontWeight.w600),
+                    fontWeight: FontWeight.w500),
               ),
               // const Spacer(flex: 1),
               const SizedBox(height: 45),
@@ -75,16 +84,16 @@ class SplashScreen extends StatelessWidget {
                     ),
                     elevation: 0,
                   ),
-                  child: const Text(
+                  child: Text(
                     'Start Now',
-                    style: TextStyle(
-                      fontSize: 15,
-                      fontWeight: FontWeight.w700,
+                    style: GoogleFonts.poppins(
+                      fontSize: 16,
+                      fontWeight: FontWeight.w500,
                     ),
                   ),
                 ),
               ),
-              const Spacer(flex: 3),
+              const Spacer(flex: 2),
             ],
           ),
         ),

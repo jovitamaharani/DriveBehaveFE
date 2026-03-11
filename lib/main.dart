@@ -1,7 +1,6 @@
+import 'package:drivingbehavior/features/auth/screens/otp_verification_screen.dart';
 import 'package:flutter/material.dart';
-import 'screens/sensor_demo_screen.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'features/auth/screens/splash_screen.dart';
 
 void main() {
   runApp(const SensorDemoApp());
@@ -19,7 +18,9 @@ class SensorDemoApp extends StatelessWidget {
         useMaterial3: true,
         textTheme: GoogleFonts.poppinsTextTheme(),
       ),
-      home: const SplashScreen(),
+
+      // home: const SplashScreen(),
+      home: const OTPVerificationScreen(),
     );
   }
 }

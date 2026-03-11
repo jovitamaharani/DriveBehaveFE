@@ -1,6 +1,8 @@
 import 'package:drivingbehavior/core/constants/app_colors.dart';
+import 'package:drivingbehavior/features/auth/screens/forgot_password_screen.dart';
 import 'package:drivingbehavior/features/auth/screens/sign_up_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class SignInScreen extends StatefulWidget {
   const SignInScreen({super.key});
@@ -54,10 +56,10 @@ class _SignInScreenState extends State<SignInScreen> {
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
                     const SizedBox(height: 22),
-                    const Center(
+                    Center(
                       child: Text(
                         'Sign In',
-                        style: TextStyle(
+                        style: GoogleFonts.poppins(
                           color: AppColors.primary,
                           fontSize: 35,
                           fontWeight: FontWeight.w900,
@@ -65,10 +67,10 @@ class _SignInScreenState extends State<SignInScreen> {
                       ),
                     ),
                     const SizedBox(height: 4),
-                    const Center(
+                    Center(
                       child: Text(
                         'Welcome back!',
-                        style: TextStyle(
+                        style: GoogleFonts.poppins(
                           color: AppColors.secondary,
                           fontSize: 13,
                           fontWeight: FontWeight.w600,
@@ -153,7 +155,15 @@ class _SignInScreenState extends State<SignInScreen> {
                     Align(
                       alignment: Alignment.centerRight,
                       child: TextButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) =>
+                                  const ForgotPasswordScreen(),
+                            ),
+                          );
+                        },
                         style: TextButton.styleFrom(
                           padding: EdgeInsets.zero,
                           minimumSize: Size.zero,
