@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:drivingbehavior/core/constants/app_colors.dart';
+import 'package:drivingbehavior/features/auth/screens/new_password_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -156,7 +157,13 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
               child: ElevatedButton(
                 onPressed: _isButtonActive
                     ? () {
-                        // Tambahkan logika verifikasi di sini
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) =>
+                                  const NewPasswordScreen(),
+                            ),
+                          );
                       }
                     : null,
                 style: ElevatedButton.styleFrom(
